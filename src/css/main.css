@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure, header, hgroup, menu, nav, section 
 }
 footer{
   margin-left: 10vw;
-  margin-top: 140px;
+  margin-top: 40px;
 }
 body {
   line-height: 1;
@@ -405,6 +405,7 @@ h1 {
 font-weight: 700;
 font-style: normal;
 margin-top: 3vh;
+margin-bottom: 3vh;
 }
 
 h2 {
