@@ -9,7 +9,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Oswald:wght@300;500&display=swap');
 
  /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -18,16 +18,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
   display: block;
 }
-
+footer{
+  margin-left: 10vw;
+  margin-top: 140px;
+}
 body {
   line-height: 1;
 }
 
 ol, ul {
-  list-style: none;
+  list-style:circle;
+  list-style-position: inside;
+  font-size:xx-large;
+  line-height: 7vh;
+  margin-top: 7vh;
 }
 
 blockquote, q {
@@ -46,6 +53,16 @@ table {
 
 a {
   text-decoration: none;
+  font-family: "griffith-gothic-condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+  color: white;
+  border: 1px solid white; 
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+a:hover{
+  color:#4494fd;
 }
 
 input, textarea {
@@ -162,9 +179,12 @@ textarea {
    ========================================================================== */
 
    body {
-    color: #222;
+    color: white;
+    background-color: #020e66;
     padding-top: 2rem;
-    font-family: "Graphik Regular", Arial, sans-serif;
+    font-family: "griffith-gothic-condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
   }
 
 
@@ -201,7 +221,7 @@ textarea {
   }
 
 main {
-  background: #fff;  
+  background: #020e66;  
   width: 80vw;
   margin: 0 auto;
 }
@@ -243,7 +263,7 @@ nav ul {
 nav li {
   flex: auto ;
   padding:1rem;
-  margin:1rem;
+  margin:3rem;
   background-color: #f5f5f5;
 }
 
@@ -314,10 +334,14 @@ nav li {
 /* this is code example for typography */
 
 p {
-  font-family: 'Bitter', serif;
-  font-size: var(--text-base-size);
+  font-family: "griffith-gothic-condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: 1.3vw;
   margin-bottom: 1 rem;
   line-height: 150%;
+  margin-bottom: 1vw;
+  width: 50vw;
 }
 
 .typescale-x6 {
@@ -377,14 +401,17 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--text-x6);
   line-height: 110%;
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 500;
+  font-family: "griffith-gothic-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+margin-top: 3vh;
 }
 
 h2 {
-  font-size: var(--text-x5);
-  font-family: 'Oswald', sans-serif; 
-  font-weight: 500;
+  font-size: var(--text-x3);
+  font-family: "griffith-gothic-condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
   line-height: 110%;
 }
 
@@ -558,7 +585,8 @@ h6 {
 
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
   }
 
   a[href]::after {
